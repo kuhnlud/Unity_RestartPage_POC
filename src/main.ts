@@ -1,0 +1,30 @@
+import "./style.css";
+
+let asLink = document.querySelectorAll("[as-type");
+
+//function to change the svg image source from the "AS" img element
+function asTypeChange(type: string) {
+  const asImg = document.getElementById("as-img");
+  if (asImg) {
+    switch (type) {
+      case "Modu680-AS":
+        asImg.setAttribute("src", "./src/Modu680-AS.svg");
+        break;
+      case "Modu660-AS":
+        asImg.setAttribute("src", "./src/Modu660-AS.svg");
+        break;
+      case "Modu612-LC":
+        asImg.setAttribute("src", "./src/Modu612-LC.svg");
+        break;
+    }
+  }
+}
+
+//add a click eventListener to all the "as-type" link element to change the svg image source. retrieve the as-type from each element and pass it to the asTypeChange function
+asLink.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    let type = link.getAttribute("as-type") || "Modu680-AS";
+    asTypeChange(type);
+  });
+});
