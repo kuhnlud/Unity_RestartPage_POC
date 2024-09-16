@@ -8,13 +8,13 @@ function asTypeChange(type: string) {
   if (asImg) {
     switch (type) {
       case "Modu680-AS":
-        asImg.setAttribute("src", "./src/Modu680-AS.svg");
+        asImg.setAttribute("src", "./Modu680-AS.svg");
         break;
       case "Modu660-AS":
-        asImg.setAttribute("src", "./src/Modu660-AS.svg");
+        asImg.setAttribute("src", "./Modu660-AS.svg");
         break;
       case "Modu612-LC":
-        asImg.setAttribute("src", "./src/Modu612-LC.svg");
+        asImg.setAttribute("src", "./Modu612-LC.svg");
         break;
     }
   }
