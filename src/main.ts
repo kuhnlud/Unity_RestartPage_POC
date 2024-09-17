@@ -32,6 +32,7 @@ languageLink.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     let language = link.getAttribute("language") || "English";
+    console.log(language);
     loadMessage(language);
   });
 });
@@ -51,3 +52,5 @@ function loadMessage(language: string) {
     messageElement.innerHTML = message[language] || '';
   }
 }
+
+loadMessage("English");
