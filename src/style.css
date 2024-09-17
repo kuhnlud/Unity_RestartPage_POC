@@ -84,8 +84,10 @@ body {
   height: 100%;
 }
 .card{
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  padding: 32px 64px;
   position: relative;
   overflow: hidden;
   align-items: center;
@@ -109,6 +111,9 @@ body {
   font-weight: 600;
   color: #006795;
   line-height: normal;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+  text-align: center;
 }
 
 .card .cloud_1, .card .cloud_2{

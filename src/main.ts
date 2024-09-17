@@ -7,7 +7,7 @@ let messageElement = document.getElementById("message");
 let message: { [key: string]: string } = {
   English: 'The server is being restarted, please wait',
   German: 'Der Server wird neu gestartet, bitte warten',
-  French: 'Le serveur est en cours de redémarrage, veuillez patienter'
+  French: 'Le serveur est en cours de redémarrage, veuillez patienterdasdfsfsdfsdfsdf ssdf fsdf sd fsdf sf sd'
 }
 //function to change the svg image source from the "AS" img element
 function asTypeChange(type: string) {
