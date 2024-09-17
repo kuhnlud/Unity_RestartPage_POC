@@ -29,6 +29,10 @@ body {
   border-bottom: 1px solid #9cf;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03), 0px 0px 2px 0px rgba(0, 0, 0, 0.06), 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
 }
+.parameter{
+  display: flex;
+  gap: 16px;
+}
 
 .dropdown {
   position: relative;
@@ -53,7 +57,7 @@ body {
   display: none;
   right: 0;
   background-color: #fff;
-  min-width: 160px;
+  min-width: max-content;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -80,10 +84,12 @@ body {
   height: 100%;
 }
 .card{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
-  place-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   width: 600px;
   height: 430px;
@@ -94,10 +100,10 @@ body {
 .card img.as {
   z-index: 20;
   height: 350px;
-  object-fit: cover;
 }
 
 .card .message{
+  z-index: 40;
   margin: 0;
   font-size: 16px;
   font-weight: 600;
@@ -117,10 +123,10 @@ body {
   animation: move_cloud_1 14s linear infinite;
 }
 .card .cloud_2{
-  --startx: -364px;
+  --startx: -485px;
   bottom: 20px;
   transform: translateX(var(--startx));
-  animation: move_cloud_2 14s linear infinite;
+  animation: move_cloud_2 12s linear infinite;
 }
 
 .card .loader{
@@ -141,6 +147,14 @@ body {
   transform-origin: center;
   transform: translate(-37px, -55px);
   animation: rotate_arrow 3s linear infinite;
+}
+
+.sauter_boegen {
+  max-height: 90px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 @keyframes move_cloud_1 {
